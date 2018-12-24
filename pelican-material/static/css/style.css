@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	font-family: Roboto; sans-serif;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+blockquote {
+    border-color: #ff9800;
+}
+
+article {
+    text-align: justify;
+}
+
+.article-details {
+    margin-top: 20px;
+}
+
+article h1, article h2, article h3, article h4 {
+    text-align: left;
+}
+
+article h1 {
+    font-size: 3rem;
+	font-family: "Google Sans Display";
+	font-weight: 400;
+}
+
+article h2 {
+    font-size: 1.5rem;
+	font-family: "Google Sans";
+    border-bottom: 1px solid #ff9800;
+	font-weight: 500;
+}
+
+article h3 {
+    font-size: 1rem;
+	font-family: "Google Sans";
+    color: #ff9800;
+}
+
+article ul li {
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+.logo {
+	font-family: "Google Sans Display";
+	font-size: 58px;
+	font-weight: 400;
+}
+
+.section {
+	font-family: Roboto, sans-serif;
+	font-size: 1.15rem;
+}
+
+.post-title {
+	font-family: "Google Sans Display";
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.summary {
+	font-family: Roboto, sans-serif;
+	font-size: 1.2rem;
+}
+
+.figure {
+    text-align: center;
+}
+
+.caption {
+    font-size: smaller;
+    margin-top: 0;
+}
+
+.highlight, .highlighttable {
+    line-height: 1.1em;
+}
+
+.text_cell_render h1 {
+	font-family: "Google Sans Display";
+	font-size: 3rem;
+	font-weight: 400;
+}
