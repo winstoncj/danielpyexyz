@@ -18,7 +18,7 @@ IGNORE_FILES = [".ipynb_checkpoints"]
 
 # Paths
 PATH = 'content'
-THEME = 'pelican-material'
+THEME = 'theme'
 IMAGES_DIR = 'images'
 STATIC_PATHS = ['images', 'pages']
 STATIC_EXCLUDES = []

@@ -1,31 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Daniel Pye - Articles taggés test</title>
+        <title>Daniel Pye - Article tags test</title>
         <meta charset="utf-8" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
         <link rel="stylesheet" href="/theme/css/pygment.css">
         <link rel="stylesheet" href="/theme/css/style.css">
-		<link href="//fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Google+Sans|Material+Icons|Google+Sans+Display" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Google+Sans|Source+Code+Pro|Material+Icons|Google+Sans+Display" rel="stylesheet">
+
     </head>
 
     <body>
+
         <header>
 			<div class="navbar-fixed">
             	<nav class="white" role="navigation">
-            	    <div class="nav-wrapper container">
-						<a href="" class="logo grey-text text-darken-3 brand-logo">Daniel Pye</a>
-            	    </div>
+            			<div class="nav-wrapper">
+							<a href="" class="logo grey-text text-darken-3 brand-logo left">Daniel Pye</a>
+							<a href="#" data-target="slide-out" class="sidenav-trigger right show-on-large"><i class=
+												"material-icons grey-text text-darken-3">menu</i></a>
+            			</div>
             	</nav>
+			</div>
+			<div class="container">
+				<ul id="slide-out" class="sidenav right">
+					<li><div class="user-view">
+								<div class="background">
+									<img src="images/office.jpg">
+								</div>
+							<a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+							<a href="#name"><span class="white-text name">John Doe</span></a>
+							<a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+						</div></li>
+					<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+					<li><a href="#!">Second Link</a></li>
+					<li><div class="divider"></div></li>
+					<li><a class="subheader">Subheader</a></li>
+					<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+				</ul>
 			</div>
         </header>
 
         <main>
         <div class="container">
-<h2 class="orange-text">Articles taggés "test"</h2>
+<h2 class="orange-text">Article tags "test"</h2>
 <div class="row">
 <div class="row">
+	<div class="col">
+    	<div class="card hoverable">
+			<div class="card-image">
+				<img src="images/privacygrid.png" alt="">
+				<span class="card-title"><h2><a class="post-title grey-text text-darken-4"
+										href="/third-post.html">Third post</a></h2></span>
+				<div class="card-fab">
+					<a class="btn-floating pulse halfway-fab waves-effect waves-light orange"
+										href="/third-post.html"><i class="material-icons">add</i></a>
+				</div>
+			</div>
+    	    <div class="card-content flow-text">
+    	        <div class="summary"><p>Yet another short blog post to test the content and style.</p></div>
+    	    </div>
+    	    <div class="card-action">
+    	        <span class="right">
+    	            <i class="mdi-action-label-outline" title="tags"> </i>
+    	            <a href="/tag/test.html" class="taglinks">test</a>
+    	            <a href="/tag/pelican.html" class="taglinks">pelican</a>
+    	            <a href="/tag/third.html" class="taglinks">third</a>
+    	            <a href="/tag/special.html" class="taglinks">special</a>
+    	        </span>
+    	    </div>
+    	</div>
+	</div>
+</div><div class="row">
+	<div class="col">
+    	<div class="card hoverable">
+			<div class="card-image">
+				<img src="images/privacygrid.png" alt="">
+				<span class="card-title"><h2><a class="post-title grey-text text-darken-4"
+										href="/second-post.html">Second post</a></h2></span>
+				<div class="card-fab">
+					<a class="btn-floating pulse halfway-fab waves-effect waves-light orange"
+										href="/second-post.html"><i class="material-icons">add</i></a>
+				</div>
+			</div>
+    	    <div class="card-content flow-text">
+    	        <div class="summary"><p>Another short blog post to test the content and style.</p></div>
+    	    </div>
+    	    <div class="card-action">
+    	        <span class="right">
+    	            <i class="mdi-action-label-outline" title="tags"> </i>
+    	            <a href="/tag/test.html" class="taglinks">test</a>
+    	            <a href="/tag/pelican.html" class="taglinks">pelican</a>
+    	            <a href="/tag/second.html" class="taglinks">second</a>
+    	            <a href="/tag/better.html" class="taglinks">better</a>
+    	        </span>
+    	    </div>
+    	</div>
+	</div>
+</div><div class="row">
 	<div class="col">
     	<div class="card hoverable">
 			<div class="card-image">
@@ -53,13 +128,24 @@
         </div>
         </main>
 
+
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
         <script src="/theme/js/init.js"></script>
 		<script>
 		$(document).ready(function(){
-		  $('.materialboxed').materialbox();
-		  });
+			$('.materialboxed').materialbox();
+		 	});
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+			});
+		$('.sidenav-trigger').sideNav({
+				menuWidth: 300,
+				closeOnClick: true,
+				edge: 'right',
+			}
+		);
 		</script>
+
     </body>
 </html>
